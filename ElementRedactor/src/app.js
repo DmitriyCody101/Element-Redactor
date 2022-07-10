@@ -4,13 +4,9 @@ const closeBtn = document.querySelector(".form button")
 const removeBtn = document.querySelector(".header img")
 const table = document.querySelector(".elements")
 
-createElement.addEventListener('click', function() {
-    form.style.display = 'block'
-})
+createElement.addEventListener('click', form.style.display = 'block')
 
-closeBtn.addEventListener('click', function() {
-    form.style.display = 'none'
-})
+closeBtn.addEventListener('click', form.style.display = 'none')
 
 document.querySelector("#submit").addEventListener('mouseup', function() {
     form.style.display = 'none'
@@ -24,6 +20,4 @@ document.querySelector("#submit").addEventListener('mouseup', function() {
     table.append(newElement)
 })
 
-removeBtn.addEventListener('click', function() {
-    table.lastChild.remove()
-})
+removeBtn.addEventListener('click', () => table.lastChild.remove())
